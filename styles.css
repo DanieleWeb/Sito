@@ -38,23 +38,22 @@ nav{
 	margin: 2px;
 }
 article{
-	max-width: 60%;
+	max-width: 65%;
 	border-radius: 17px;	
 }
-.content{	
+table, caption{	
 	background-color:white;
-}
-table{
-	border: 5px groove black;
 }
 th, td{
 	border: 2px solid lightblue;
 	text-align: center;
 }
 p{
-	border-radius: 10px;
+	border-radius: 7px;
+	background-color:white
 }
 .mini_logo{
 	width: 17px;
 	position: relative;
 }
+
