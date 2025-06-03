@@ -16,14 +16,6 @@ function buttonClickedShow(){
 	}
 }
 let isMobile
-if(navigator.maxTouchPoints === 0){
-	isMobile = true
-	console.log(isMobile)
-	test()
-}
-else{
-	isMobile = false
-}
 function buttonSize(){
 	if(navigator.maxTouchPoints > 0){
 		isMobile = true
