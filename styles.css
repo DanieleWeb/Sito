@@ -1,0 +1,140 @@
+body {background-color:#94F3FD;font-family: "WDXL lubrifont TC", serif;}
+#loader_bk{
+	min-width: 100%;
+	min-height: 100%;
+	background-color: lightgrey;
+	position: fixed;
+	bottom: 0;
+	z-index: 150;
+	left: 0;
+	animation-duration:5s;
+	animation-fill-mode: forwards; /*l'elemnto avrà lo stile prescritto dalla ultima frame*/
+}
+.loading_square{
+	width: 20px;
+	height: 20px;
+	z-index:200;
+	animation-name: loading;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: 50%
+}
+#square1{
+	right:30%
+}
+#square2{
+	right: 50%
+}
+#square3{
+	left:25%
+}
+@keyframes loading{
+	0% {background-color:white; transform: rotate(90deg)}
+	25% {background-color:#d1d1d1; transform: rotate(90deg)}
+	50% {background-color:grey; transform: rotate(180deg)}
+	100% {background-color:white; transform: rotate(360deg)} 
+}
+@keyframes ending_loading{
+	from{opacity: 1; z-index: 150}
+	to{opacity: 0; z-index: -220}
+}
+h1 { 
+	margin: 2px;
+	text-align: left;
+}
+
+h2 {	
+	width:175px; 
+	background-color: white; 
+	background-image: linear-gradient(170deg,powderblue ,white)
+}
+.navbutton{
+	cursor: pointer;
+	color: #0080FF;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 5px;
+}
+.navbutton:hover{
+	background-color:  #0080FF;
+	color: white;
+}
+.navbutton:disabled{
+	background-color:darkgrey;
+	color: black;
+	cursor:help;
+}
+.navbutton:hover:disabled{
+	background-color:grey;
+}
+.hideButton{
+	cursor: pointer;
+	color: #0080FF;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 5px
+}
+.hideButton:hover{
+	background-color:  #0080FF;
+	color: white;
+}
+.hideButton:disabled{
+	background-color:darkgrey;
+	color: black;
+	cursor:help;
+}
+.hideButton:hover:disabled{
+	background-color:grey;
+}
+#show_hide_button{
+	width: 50px
+}
+#bk_video{
+	position: fixed;
+	bottom:0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-attachment:fixed;
+	z-index: -100;
+}
+nav{
+	border-radius: 24px;
+}
+#logo{
+	width: 36px; 
+	float: left; 
+	padding: 6px;
+	margin: 2px;
+}
+article{
+	text-align: center;
+	border-radius: 17px;	
+}
+table, caption{	
+	background-color:white;
+}
+th, td{
+	border: 2px solid lightblue;
+	text-align: center;
+}
+p{
+	border-radius: 7px;
+	background-color:white;
+	line-height : 20px;
+	font-size: 20px
+}
+.mini_logo{
+	width: 17px;
+	position: relative;
+}
+@font-face{
+	font-family:"WDXL lubrifont TC";
+	src: url(font.ttf);
+}
+span[title]{
+	font-style: italic;
+	color: darkblue;
+	font-weight: 800;
+}
